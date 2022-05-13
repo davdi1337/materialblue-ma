@@ -544,20 +544,12 @@ a[style*="color: red"]
     background-color: var(--accent_hover);
     box-shadow: none;
 }
-.profilkep
+img.profilkep
 {
-    border-radius: 50%;
+    border-radius: 50%!important;
     width: 150px;
     height: 150px;
     box-shadow: var(--shadow);
-}
-@media only screen and (min-width: 300px)
-{
-    .profilkep
-    {
-        width: 100px;
-        height: 100px;
-    }
 }
 table {
     border-radius: var(--borderrad_lg);
