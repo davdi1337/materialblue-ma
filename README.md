@@ -2,8 +2,13 @@
 
 ### Beállítás:
 1. [MagyarAnime Stíluskezleő](https://magyaranime.hu/felhasznalo/customcss/)
-2. CustomCSS mezőbe bemásolod az alábbit: ```css @import url("url")```
+2. CustomCSS mezőbe bemásolod a stílushoz tartozó linket
 3. Elmented
+
+### Link amit be kell másolni
+```css
+@import url("https://davdi1337.github.io/materialblue-ma/main.css")
+```
 
 # Elérhető funkciók
 ### Header(Fejléc) hátterének változtatása
