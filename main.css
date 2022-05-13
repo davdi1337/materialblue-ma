@@ -567,9 +567,9 @@ tr {
 table td {
     padding: 15px;
 }
-h2
+td h2
 {
-    color: var(--accent);
+    color: var(--accent)!important;
 }
 .aboutkep,
 .profilmenukep,
