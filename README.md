@@ -10,6 +10,34 @@
 @import url("https://davdi1337.github.io/materialblue-ma/main.css")
 ```
 
+# Elérhető változatok
+### (Azt másolod be amelyiket szeretnéd, az összes működik)
+###### Utoljára frissítve: 2022.05.13
+#### Kék (Alap)
+```css
+@import url("https://davdi1337.github.io/materialblue-ma/main.css")
+```
+#### Zöld
+```css
+@import url("https://davdi1337.github.io/materialblue-ma/styles/green.css")
+```
+#### Narancs
+```css
+@import url("https://davdi1337.github.io/materialblue-ma/styles/orange.css")
+```
+#### Lila
+```css
+@import url("https://davdi1337.github.io/materialblue-ma/styles/purple.css")
+```
+#### Piros
+```css
+@import url("https://davdi1337.github.io/materialblue-ma/styles/red.css")
+```
+#### Zöldeskék
+```css
+@import url("https://davdi1337.github.io/materialblue-ma/styles/teal.css")
+```
+
 # Elérhető funkciók
 ### Header(Fejléc) hátterének változtatása
 ```css
@@ -20,7 +48,7 @@
 ### Példa: 
 ```css
 :root {
---headerimage: url("https://images6.alphacoders.com/106/thumb-1920-1061828.png");
+  --headerimage: url("https://images6.alphacoders.com/106/thumb-1920-1061828.png");
 }
 ```
 #### (Igény esetén bővülhetnek a funckiók)
