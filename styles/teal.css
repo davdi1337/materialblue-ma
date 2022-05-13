@@ -1,0 +1,7 @@
+@import url("https://davdi1337.github.io/materialblue-ma/main.css");
+:root {
+  --accent: rgb(28, 202, 255);
+  --accent_dark: rgb(28, 202, 255);
+  --accent_hover: rgb(14, 119, 183);
+  --button-shadow: rgb(28 202 255 / 24%) 0px 8px 16px 0px;
+}
