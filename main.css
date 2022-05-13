@@ -676,11 +676,13 @@ textarea[name*="custom_css"] {
     content: "Magyar";
     color: var(--white);
     display: inline-flex;
+    font-family: var(--font);
 }
 .header__logo a:after {
     content: "Anime";
     font-weight: 700;
     color: var(--accent);
+    font-family: var(--font);
 }
 .header__right a:hover {
     color: var(--accent);
