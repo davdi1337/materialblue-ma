@@ -1,7 +1,7 @@
 # MaterialBlue - MA (1.0)
 
 ### Beállítás:
-1. [MagyarAnime Stíluskezleő](https://magyaranime.hu/felhasznalo/customcss/)
+1. [MagyarAnime Stíluskezelő](https://magyaranime.hu/felhasznalo/customcss/)
 2. CustomCSS mezőbe bemásolod a stílushoz tartozó linket
 3. Elmented
 
