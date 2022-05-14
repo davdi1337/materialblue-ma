@@ -495,7 +495,7 @@ i[style*="color: #F00"]
 }
 .nice-select .current
 {
-    color: var(--white);
+    color: var(--white)!important;
 }
 .nice-select:after,
 .product__page__title .product__page__filter .nice-select:after
