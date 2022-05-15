@@ -12,7 +12,7 @@
 
 # Elérhető változatok
 ### (Azt másolod be amelyiket szeretnéd, az összes működik)
-###### Utoljára frissítve: 2022.05.13
+###### Utoljára frissítve: 2022.05.15
 #### Kék (Alap)
 ```css
 @import url("https://davdi1337.github.io/materialblue-ma/main.css")
