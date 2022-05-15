@@ -489,7 +489,7 @@ i[style*="color: #F00"] {
 }
 
 .nice-select .current {
-  color: var(--white);
+  color: var(--white)!important;
 }
 
 .nice-select:after,
