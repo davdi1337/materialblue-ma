@@ -733,6 +733,7 @@ textarea[name*="custom_css"] {
 
 .product__pagination {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .header__logo img {
