@@ -1072,6 +1072,10 @@ span[style*="color: green"] {
   margin-right: 45px;
 }
 
+.product__page__content table {
+  overflow: auto;
+}
+
 /* footer */
 .footer {
   background-color: var(--bg_alpha);
