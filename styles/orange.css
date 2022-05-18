@@ -3,5 +3,6 @@
   --accent: rgb(253, 169, 45);
   --accent_dark: rgb(253, 169, 45);
   --accent_hover: rgb(182, 104, 22);
+  --accent_alpha: rgba(253, 169, 45, 0.16);
   --button-shadow: rgb(253 169 45 / 24%) 0px 8px 16px 0px;
 }
