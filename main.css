@@ -943,6 +943,30 @@ span[style*="color: green"] {
     padding-left: 0 !important;
   }
 }
+/* ver 1.165 */
+span[style*="background-color: red"],
+.site-btn, .login__register .primary-btn,
+.page-up a,
+.hero__text a span,
+.episode_link,
+.anime__details__btn .follow-btn, .anime__details__btn .watch-btn span,
+.anime__details__form form button,
+span[style*="#471280"],
+.nice-submit,
+.product__sidebar__view__item .ep,
+div[style*="#f7347a"],
+.plyr--full-ui.plyr--video .plyr__control--overlaid,
+.product__item__pic .comment {
+	border-radius: var(--borderrad_md)!important; /* make all buttons same radius */
+}
+.page-up a {
+	border-radius: 50%!important;
+}
+body > div > section > div {
+	margin-top: 70px;
+}
+
+
 /* footer */
 .footer {
   background-color: var(--bg_alpha);
