@@ -1,7 +1,26 @@
 @import url("https://davdi1337.github.io/materialblue-ma/main.css");
 :root {
-  --accent: rgb(28, 202, 255);
-  --accent_dark: rgb(28, 202, 255);
-  --accent_hover: rgb(14, 119, 183);
-  --button-shadow: rgb(28 202 255 / 24%) 0px 8px 16px 0px;
+  --accent: rgb(28, 255, 182);
+  --accent_dark: rgb(28, 255, 182);
+  --accent_hover: rgb(14, 183, 152);
+  --accent_alpha: rgba(28, 255, 182, 0.16);
+  --button-shadow: rgb(28 255 182 / 24%) 0px 8px 16px 0px;
+  --button-color: rgb(33, 43, 54);
+}
+span[style*="background-color: red"],
+.site-btn, .login__register .primary-btn,
+.page-up a,
+.hero__text a span,
+.episode_link,
+.anime__details__btn .follow-btn, .anime__details__btn .watch-btn span,
+.anime__details__form form button,
+span[style*="#471280"],
+.nice-submit,
+.product__sidebar__view__item .ep,
+div[style*="#f7347a"],
+.plyr--full-ui.plyr--video .plyr__control--overlaid{
+	color: var(--button-color)!important;
+}
+#uptotop span {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512' width='14' fill='rgb(33, 43, 54)'%3E%3Cpath d='M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z'/%3E%3C/svg%3E");
 }
