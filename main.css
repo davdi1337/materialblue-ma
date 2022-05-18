@@ -414,7 +414,7 @@ i[style*="color: #F00"] {
   box-shadow: var(--shadow);
 }
 .nice-select .current {
-  color: var(--white)!important;
+  color: var(--white) !important;
 }
 .nice-select:after,
 .product__page__title .product__page__filter .nice-select:after {
@@ -934,6 +934,13 @@ span[style*="color: green"] {
   }
   .product__page__content > .row {
     margin-top: 50px;
+  }
+  /* remove the bullshit margin & padding to fix offscreen */
+  .product__page__content .row {
+    margin-left: auto;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
   }
 }
 /* footer */
