@@ -1191,6 +1191,9 @@ span[style*="color: green"] {
 #form3>div>br {
 	display: none;
 }
+body > div > section.product.spad > div > div > div > div > div:nth-child(1) > div > div > div > table {
+	overflow: auto;
+}
 
 /* footer */
 .footer {
