@@ -1177,6 +1177,9 @@ span[style*="color: green"] {
 	.live__product>.row:nth-child(2) {
 		justify-content: start;
 	}
+	body>div>section.product.spad>div {
+		margin-top: 100px;
+	}
 }
 
 #form3>div {
