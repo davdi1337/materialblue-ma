@@ -1219,6 +1219,9 @@ body > div > section.product.spad > div > div > div > div > div:nth-child(1) > d
 		transform: translate(-50%, -50%);
 	}
 }
+.breadcrumb__links {
+	margin-top: 70px;
+}
 	
 
 /* footer */
