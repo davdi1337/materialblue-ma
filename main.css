@@ -1020,7 +1020,7 @@ span[style*="color: green"] {
 		width: 60%;
 		left: 50%;
 /* 		margin-top: 60px; */ /* RÉGI */
-		marign-top: 85px; /* ver 1.175 */
+		margin-top: 85px; /* ver 1.175 */
 		transform: translateX(-50%);
 	}
 
