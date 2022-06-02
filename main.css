@@ -2,7 +2,7 @@
 
 /* variables */
 :root {
-	--ver: "1.17";
+	--ver: "1.175";
 	--bg: rgb(22, 28, 36);
 	--cardbg: rgb(33, 43, 54);
 	--navbarbg: rgba(22, 28, 36, 0.8);
@@ -959,7 +959,8 @@ span[style*="color: green"] {
 	margin-top: 100px;
 }
 
-.aktiv_ppl {
+.aktiv_ppl,
+.aktiv_ppl_mobil {
 	background-color: var(--red);
 	color: var(--white);
 	position: relative;
@@ -1194,6 +1195,11 @@ span[style*="color: green"] {
 body > div > section.product.spad > div > div > div > div > div:nth-child(1) > div > div > div > table {
 	overflow: auto;
 }
+/* 1.175 */
+#form3>div {
+	flex-wrap: wrap;
+}
+	
 
 /* footer */
 .footer {
