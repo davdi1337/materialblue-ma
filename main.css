@@ -1195,9 +1195,28 @@ span[style*="color: green"] {
 body > div > section.product.spad > div > div > div > div > div:nth-child(1) > div > div > div > table {
 	overflow: auto;
 }
-/* 1.175 */
+/* ver 1.175 */
 #form3>div {
 	flex-wrap: wrap;
+}
+@media only screen and (max-width: 600px) {
+	iframe {
+		height: 200px;
+	}
+	body[style*="margin: 0; width: 100%; color: #ffffff"] {
+		height: 200px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.play_button {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		margin-left: -1.5px;
+		margin-top: -1.5px;
+		transform: translate(-50%, -50%);
+	}
 }
 	
 
