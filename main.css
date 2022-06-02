@@ -1019,7 +1019,8 @@ span[style*="color: green"] {
 	.slicknav_nav {
 		width: 60%;
 		left: 50%;
-		margin-top: 60px;
+/* 		margin-top: 60px; */ /* RÉGI */
+		marign-top: 85px; /* ver 1.175 */
 		transform: translateX(-50%);
 	}
 
