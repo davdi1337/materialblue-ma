@@ -51,7 +51,6 @@
   --headerimage: url("https://images6.alphacoders.com/106/thumb-1920-1061828.png");
 }
 ```
-#### (Igény esetén bővülhetnek a funckiók)
 
 # Előnézet
 ![Preview](https://github.com/davdi1337/materialblue-ma/blob/master/images/preview.jpg)
