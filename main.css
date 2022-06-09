@@ -2,7 +2,7 @@
 
 /* variables */
 :root {
-	--ver: "1.175";
+	--ver: "1.18";
 	--bg: rgb(22, 28, 36);
 	--cardbg: rgb(33, 43, 54);
 	--navbarbg: rgba(22, 28, 36, 0.8);
@@ -529,7 +529,7 @@ i[style*="color: #F00"] {
 	padding: 8px 22px;
 	font-weight: 700;
 	letter-spacing: normal;
-	border-radius: var(--borderrad_md);
+	border-radius: var(--borderrad_md) !important;
 	box-shadow: var(--button-shadow);
 	transition: background-color var(--transition_button),
 		box-shadow var(--transition_button);
@@ -1019,8 +1019,10 @@ span[style*="color: green"] {
 	.slicknav_nav {
 		width: 60%;
 		left: 50%;
-/* 		margin-top: 60px; */ /* RÉGI */
-		margin-top: 85px; /* ver 1.175 */
+		/* 		margin-top: 60px; */
+		/* RÉGI */
+		margin-top: 85px;
+		/* ver 1.175 */
 		transform: translateX(-50%);
 	}
 
@@ -1179,6 +1181,7 @@ span[style*="color: green"] {
 	.live__product>.row:nth-child(2) {
 		justify-content: start;
 	}
+
 	body>div>section.product.spad>div {
 		margin-top: 100px;
 	}
@@ -1193,23 +1196,28 @@ span[style*="color: green"] {
 #form3>div>br {
 	display: none;
 }
-body > div > section.product.spad > div > div > div > div > div:nth-child(1) > div > div > div > table {
+
+body>div>section.product.spad>div>div>div>div>div:nth-child(1)>div>div>div>table {
 	overflow: auto;
 }
+
 /* ver 1.175 */
 #form3>div {
 	flex-wrap: wrap;
 }
+
 @media only screen and (max-width: 600px) {
 	iframe {
 		height: 200px;
 	}
+
 	body[style*="margin: 0; width: 100%; color: #ffffff"] {
 		height: 200px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
+
 	.play_button {
 		position: absolute;
 		width: 30px;
@@ -1219,10 +1227,115 @@ body > div > section.product.spad > div > div > div > div > div:nth-child(1) > d
 		transform: translate(-50%, -50%);
 	}
 }
+
 .breadcrumb__links {
 	margin-top: 70px;
 }
-	
+
+/* ver 1.18 */
+@media only screen and (max-width: 400px) {
+
+	.trending__product>.row:nth-child(2),
+	.popular__product>.row:nth-child(2),
+	.recent__product>.row:nth-child(2),
+	.live__product>.row:nth-child(2) {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+		justify-content: space-between;
+		grid-gap: 20px 12px;
+	}
+
+	.trending__product>.row:nth-child(2)>div[class*="col-lg-4"],
+	.popular__product>.row:nth-child(2)>div[class*="col-lg-4"],
+	.recent__product>.row:nth-child(2)>div[class*="col-lg-4"],
+	.live__product>.row:nth-child(2)>div[class*="col-lg-4"] {
+		max-width: 160px;
+	}
+
+	.product__item__pic {
+		width: 100%;
+		height: 180px;
+	}
+
+	.product__item__pic .comment {
+		bottom: 20%;
+	}
+
+	.product__item__pic .view {
+		left: 10px;
+		right: inherit;
+	}
+
+	.product__item {
+		width: 100%;
+	}
+}
+
+.product__item__text h5 a {
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.trending__product>.row:nth-child(2),
+.popular__product>.row:nth-child(2),
+.recent__product>.row:nth-child(2),
+.live__product>.row:nth-child(2) {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 185px);
+	grid-gap: 25px 30px;
+	justify-content: space-around;
+}
+
+.product__item__pic {
+	width: 100%;
+	height: 265px;
+}
+
+body>div>section>div>div>div>div>div.row>div>div>div>center {
+	margin-top: 0;
+}
+
+body>div>.product.spad {
+	margin-top: 100px;
+}
+
+body>div>section.product.spad>div>div>div>div>div:nth-child(5)>div>table>tbody>tr:nth-child(1)>td:nth-child(1) {
+	width: 0 !important;
+	padding: 0 !important;
+}
+
+img[alt="profilkep"] {
+	position: absolute;
+	top: -170px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 150px;
+	box-shadow: var(--shadow);
+}
+
+body>div>section.product.spad>div>div>div>div>div:nth-child(5) {
+	margin-top: 150px;
+}
+
+body>div>section.product.spad>div>div>div>div>div:nth-child(5)>div>table {
+	margin-top: 0 !important;
+}
+
+body>div>section.product.spad>div>div>div>div>div:nth-child(17) {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 185px);
+	grid-gap: 25px 30px;
+	justify-content: space-around;
+	padding-left: 30px;
+}
+
+body>div>section.product.spad>div>div>div>div>div:nth-child(17)>div {
+	max-width: 100%;
+	padding: 0;
+}
 
 /* footer */
 .footer {
