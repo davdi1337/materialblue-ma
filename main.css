@@ -1233,16 +1233,16 @@ body>div>section.product.spad>div>div>div>div>div:nth-child(1)>div>div>div>table
 }
 
 /* ver 1.18 */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 410px) {
 
 	.trending__product>.row:nth-child(2),
 	.popular__product>.row:nth-child(2),
 	.recent__product>.row:nth-child(2),
 	.live__product>.row:nth-child(2) {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-		justify-content: space-between;
-		grid-gap: 20px 12px;
+		grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)) !important;
+		justify-content: space-between !important;
+		grid-gap: 20px 12px !important;
 	}
 
 	.trending__product>.row:nth-child(2)>div[class*="col-lg-4"],
@@ -1266,8 +1266,28 @@ body>div>section.product.spad>div>div>div>div>div:nth-child(1)>div>div>div>table
 		right: inherit;
 	}
 
+	.product__item__pic .view[style*="bottom: 35px"] {
+		bottom: 77% !important;
+	}
+
 	.product__item {
 		width: 100%;
+	}
+
+	.trending__product {
+		margin-top: 0;
+	}
+
+	body>div>section>div>div>div>div.product__page__content>div.product__page__title>div>div.col-lg-4.col-md-4.col-sm-6 {
+		position: relative !important;
+		top: 0 !important;
+		right: 0 !important;
+	}
+
+	td[style*="background-image"] {
+		width: 125px !important;
+		height: 125px !important;
+		top: -210px;
 	}
 }
 
@@ -1302,11 +1322,12 @@ body>div>.product.spad {
 	margin-top: 100px;
 }
 
-body>div>section.product.spad>div>div>div>div>div:nth-child(5)>div>table>tbody>tr:nth-child(1)>td:nth-child(1) {
-	width: 0 !important;
-	padding: 0 !important;
+/*
+body > div > section.product.spad > div > div > div > div > div:nth-child(5) > div > table > tbody > tr:nth-child(1) > td:nth-child(1){
+	width: 0!important;
+	padding: 0!important;
 }
-
+*/
 img[alt="profilkep"] {
 	position: absolute;
 	top: -170px;
@@ -1335,6 +1356,10 @@ body>div>section.product.spad>div>div>div>div>div:nth-child(17) {
 body>div>section.product.spad>div>div>div>div>div:nth-child(17)>div {
 	max-width: 100%;
 	padding: 0;
+}
+
+.product__pagination {
+	flex-wrap: wrap;
 }
 
 /* footer */
