@@ -1,4 +1,4 @@
-# MaterialBlue - MA (1.18)
+# MaterialBlue - MA (1.185)
 
 ### Beállítás:
 1. [MagyarAnime Stíluskezelő](https://magyaranime.hu/felhasznalo/customcss/)
@@ -12,7 +12,7 @@
 
 # Elérhető változatok
 ### (Azt másolod be amelyiket szeretnéd, az összes működik)
-###### Utoljára frissítve: 2022.06.10
+###### Utoljára frissítve: 2022.06.26
 #### Kék (Alap)
 ```css
 @import url("https://davdi1337.github.io/materialblue-ma/main.css")
