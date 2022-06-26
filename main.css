@@ -1362,7 +1362,10 @@ body>div>section.product.spad>div>div>div>div>div:nth-child(17)>div {
 	flex-wrap: wrap;
 }
 /* ver 1.185 */
-body > div > section.product.spad > div > div > div > div.trending__product > div:nth-child(2) > div {
+body > div > section.product.spad > div > div > div > div.trending__product > div:nth-child(2) > div,
+body > div > section.product.spad > div > div > div > div.popular__product > div:nth-child(2) > div,
+body > div > section.product.spad > div > div > div > div.recent__product > div:nth-child(2) > div,
+body > div > section.product.spad > div > div > div > div.live__product > div:nth-child(2) > div {
 	max-width: 100%;
 	padding: 0;
 	/* ha ki van kapcsolva a hozzászólások menü ne nyomja össze */
