@@ -2,7 +2,7 @@
 
 /* variables */
 :root {
-	--ver: "1.18";
+	--ver: "1.185";
 	--bg: rgb(22, 28, 36);
 	--cardbg: rgb(33, 43, 54);
 	--navbarbg: rgba(22, 28, 36, 0.8);
@@ -1361,6 +1361,13 @@ body>div>section.product.spad>div>div>div>div>div:nth-child(17)>div {
 .product__pagination {
 	flex-wrap: wrap;
 }
+/* ver 1.185 */
+body > div > section.product.spad > div > div > div > div.trending__product > div:nth-child(2) > div:nth-child(1) {
+	max-width: 100%;
+	padding: 0;
+	/* ha ki van kapcsolva a hozzászólások menü ne nyomja össze */
+}
+
 
 /* footer */
 .footer {
