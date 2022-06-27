@@ -1406,6 +1406,11 @@ body > div > footer > div.container > div:nth-child(2) {
 	text-align: center;
 	/* footer szöveg */
 }
+.page-up {
+	margin: 0;
+	transform: translateX(-50%);
+	z-index: 2; /* footer page-up gomb kurzor bugfix */
+}
 
 /* footer */
 .footer {
