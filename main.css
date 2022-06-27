@@ -2,7 +2,7 @@
 
 /* variables */
 :root {
-	--ver: "1.185";
+	--ver: "1.186";
 	--bg: rgb(22, 28, 36);
 	--cardbg: rgb(33, 43, 54);
 	--navbarbg: rgba(22, 28, 36, 0.8);
@@ -961,8 +961,17 @@ span[style*="color: green"] {
 
 .aktiv_ppl,
 .aktiv_ppl_mobil {
+	/* RÉGI
 	background-color: var(--red);
-	color: var(--white);
+	color: var(--white); 
+	*/
+	/* ÚJ */
+	background-color: rgba(24, 144, 255, 0.16);
+	color: rgb(116, 202, 255);
+	font-weight: 700;
+	font-size: 0.75rem;
+	border-radius: 6px;
+	/* ÚJ VÉGE */
 	position: relative;
 	right: 0;
 	bottom: 0;
@@ -1387,10 +1396,23 @@ body > div > section.product.spad > div > div > div > div.live__product > div:nt
 	box-shadow: none;
 	background-color: var(--accent_hover) !important;
 }
+body > div > footer > div.container > div:nth-child(2) > div:nth-child(1) {
+	display: none; /* footer paypal logo display */
+}
+body > div > footer > div.container > div:nth-child(2) {
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+	text-align: center;
+	/* footer szöveg */
+}
 
 /* footer */
 .footer {
 	background-color: var(--bg_alpha);
+	min-height: 200px;
+	height: inherit!important;
+	padding: 0;
 }
 
 .footer p {
