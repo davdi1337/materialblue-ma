@@ -1411,6 +1411,43 @@ body > div > footer > div.container > div:nth-child(2) {
 	transform: translateX(-50%);
 	z-index: 2; /* footer page-up gomb kurzor bugfix */
 }
+/* ver 1.186 */
+table {
+	overflow: auto;
+}
+body > div > section.product.spad > div > div > div > div > div.row > div > table > tbody > tr > td:first-child {
+	border-bottom-left-radius: var(--borderrad_lg);
+	border-top-left-radius: var(--borderrad_lg);
+}
+body > div > section.product.spad > div > div > div > div > div.row > div > table > tbody > tr:nth-child(1) > td:nth-child(1) {
+	overflow: hidden;
+	border-top-left-radius: var(--borderrad_lg);
+	border-bottom-left-radius: var(--borderrad_lg);
+}
+body > div > section.product.spad > div > div > div > div > div.row > div > table > tbody > tr:nth-child(2) > td:last-child {
+	border-top-right-radius: var(--borderrad_lg);
+}
+body > div > section.product.spad > div > div > div > div > div.row > div > table > tbody > tr > td:nth-child(3) {
+	overflow: hidden;
+	border-top-right-radius: var(--borderrad_lg);
+	border-bottom-right-radius: var(--borderrad_lg);
+}
+
+table td i:hover > img {
+	border: none;
+	background-color: var(--cardbg);
+	border-radius: var(--borderrad_md);
+	box-shadow: var(--shadow_card);
+	top: 50%;
+	transform: translateY(-50%);
+	left: -135px;
+	width: 125px;
+}
+table {
+	border-spacing: 2px;
+	border-collapse: separate;
+}
+
 
 /* footer */
 .footer {
