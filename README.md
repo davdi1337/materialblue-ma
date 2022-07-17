@@ -11,7 +11,6 @@
 ```
 
 # Elérhető változatok
-### (Azt másolod be amelyiket szeretnéd, az összes működik)
 ###### Utoljára frissítve: 2022.07.17
 #### Kék (Alap)
 ```css
@@ -38,19 +37,6 @@
 @import url("https://davdi1337.github.io/materialblue-ma/styles/teal.css")
 ```
 
-# Elérhető funkciók
-### Header(Fejléc) hátterének változtatása
-```css
-:root {
-  --headerimage: url("KÉPLINK")
-}
-```
-### Példa: 
-```css
-:root {
-  --headerimage: url("https://images6.alphacoders.com/106/thumb-1920-1061828.png");
-}
-```
 
 # Előnézet
 ![Preview](https://github.com/davdi1337/materialblue-ma/blob/master/images/preview.jpg)
