@@ -1515,6 +1515,11 @@ span[style*="#0ecee3"] {
 	-webkit-line-clamp: 3;
 	-webkit-box-orient: vertical;
 }
+.jobb_sav_overflow > div > div > span {
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+}
 .comment_szekcio::-webkit-scrollbar {
 	background: none;
 	width: 0.4rem;
