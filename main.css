@@ -1484,6 +1484,14 @@ span[style*="#34eb5c"] {
 span[style*="#0ecee3"] {
 	color: var(--accent)!important;
 }
+#preloder{
+	background-color: rgba(22, 28, 36, 0.8);
+	backdrop-filter: blur(50px)
+}
+.loader {
+	border-color: var(--accent)!important;
+	border-left-color: transparent!important;
+}
 
 
 /* footer */
