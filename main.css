@@ -1492,6 +1492,40 @@ span[style*="#0ecee3"] {
 	border-color: var(--accent)!important;
 	border-left-color: transparent!important;
 }
+.jobb_sav_overflow > div > div > span,
+.jobb_sav_overflow > div > div > span > span{
+	opacity: 1;
+}
+.jobb_sav_overflow {
+	background-color: var(--cardbg);
+	border-radius: var(--borderrad_md);
+	padding: 1rem;
+	box-shadow: var(--shadow_card);
+}
+.jobb_sav_overflow::-webkit-scrollbar {
+	background: none;
+	width: 0.4rem;
+}
+.jobb_sav_overflow::-webkit-scrollbar-thumb {
+	background-color: var(--accent);
+	border-radius: var(--borderrad_lg);
+}
+.jobb_sav_overflow > div > div > h5 > a {
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+.comment_szekcio::-webkit-scrollbar {
+	background: none;
+	width: 0.4rem;
+}
+.comment_szekcio::-webkit-scrollbar-thumb {
+	background-color: var(--accent);
+	border-radius: var(--borderrad_lg);
+}
+.anime__review__item__text {
+	max-width: 93%;
+}
 
 
 /* footer */
