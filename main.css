@@ -2,7 +2,7 @@
 
 /* variables */
 :root {
-	--ver: "1.186";
+	--ver: "1.187";
 	--bg: rgb(22, 28, 36);
 	--cardbg: rgb(33, 43, 54);
 	--navbarbg: rgba(22, 28, 36, 0.8);
@@ -1446,6 +1446,43 @@ table td i:hover > img {
 table {
 	border-spacing: 2px;
 	border-collapse: separate;
+}
+/* ver 1.187 */
+.gomb_elozo,
+.gomb_kovetkezo {
+	border-radius: var(--borderrad_md);
+	font-weight: 600;
+}
+.gomb_elozo {
+	background-color: var(--accent_alpha);
+}
+.gomb_kovetkezo {
+	background-color: var(--accent);
+}
+.gomb_kovetkezo:hover a {
+	color: var(--white)!important;
+}
+body > div:nth-child(2) > section > div > div > div.col-lg-12 > div.anime__video__player > center > div:nth-child(4) > div {
+	border-radius: var(--borderrad_sm);
+	background-color: var(--accent)!important;
+	font-weight: 600;
+	width: 25%!important;
+	cursor: pointer;
+	transition: background-color var(--transition_button);
+}
+body > div:nth-child(2) > section > div > div > div.col-lg-12 > div.anime__video__player > center > div:nth-child(4) > div:hover {
+	background-color: var(--accent_hover)!important;
+}
+body > div:nth-child(2) > section > div > div > div.col-lg-12 > div.anime__video__player > center > div:nth-child(4) {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+}
+span[style*="#34eb5c"] {
+	color: var(--green)!important;
+}
+span[style*="#0ecee3"] {
+	color: var(--accent)!important;
 }
 
 
