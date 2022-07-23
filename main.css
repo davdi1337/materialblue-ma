@@ -1613,6 +1613,9 @@ body > div > section > div > section > div > div > div.row > div {
 .accordion h3 {
 	color: var(--bs-accordion-btn-color);
 }
+.jobb_sav_overflow > div > div > h5 > a {
+	overflow: hidden;
+}
 
 /* footer */
 .footer {
