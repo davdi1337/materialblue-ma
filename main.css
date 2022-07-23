@@ -1616,6 +1616,12 @@ body > div > section > div > section > div > div > div.row > div {
 .jobb_sav_overflow > div > div > h5 > a {
 	overflow: hidden;
 }
+span[style*="#e0e327"] {
+	color: var(--yellow)!important;
+}
+span[style*="#eb4034"] {
+	color: var(--red)!important;
+}
 
 /* footer */
 .footer {
