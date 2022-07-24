@@ -1629,6 +1629,12 @@ body > div > section.product.spad > div > div > div > div > div:nth-child(13) {
     grid-template-columns: repeat(auto-fill, 200px);
     grid-gap: 25px 15px;
 }
+#clockdiv > div {
+	background-color: var(--cardbg);
+}
+#clockdiv div > span {
+	background-color: var(--accent_alpha);
+}
 
 /* footer */
 .footer {
