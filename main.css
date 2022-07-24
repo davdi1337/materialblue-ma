@@ -1622,6 +1622,9 @@ span[style*="#e0e327"] {
 span[style*="#eb4034"] {
 	color: var(--red)!important;
 }
+.anime_ep_uj {
+	background-color: var(--accent)!important;
+}
 
 /* footer */
 .footer {
