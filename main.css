@@ -2,7 +2,7 @@
 
 /* variables */
 :root {
-	--ver: "1.188";
+	--ver: "1.189";
 	--bg: rgb(22, 28, 36);
 	--cardbg: rgb(33, 43, 54);
 	--navbarbg: rgba(22, 28, 36, 0.8);
@@ -1634,6 +1634,19 @@ body > div > section.product.spad > div > div > div > div > div:nth-child(13) {
 }
 #clockdiv div > span {
 	background-color: var(--accent_alpha);
+}
+/* ver 1.189 */
+body > div > section.product.spad > div > div > div > div > div:nth-child(6) {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 250px);
+	grid-gap: 15px;
+	justify-content: space-between;
+}
+body > div > section.product.spad > div > div > div > div > div:nth-child(10){
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 200px);
+	justify-content: space-between;
+	grid-gap: 15px;
 }
 
 /* footer */
