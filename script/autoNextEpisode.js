@@ -31,7 +31,11 @@ var timer = setInterval(function() {
     } else {
         element.innerHTML = `Következő rész (${countdown})`
     }
-    countdown -= 1
+    if (document.querySelector("#MagyarAnime > div").classList.contains("plyr--paused")) {
+        countdown // ha megállítják a lejátszást megáll a számláló
+    } else {
+        countdown -= 1 // ha elindul a lejátszás elindul a számláló
+    }
 }, 1000)
 
 function createButton() {
@@ -47,7 +51,6 @@ currentTime_div.addEventListener("DOMSubtreeModified", function asdasd() {
     var currentTime_sec = parseInt(currentTime_div.innerText.slice(-2))
     var currentTime = currentTime_mins + currentTime_sec
     var kovetkezo_ep_buttons = document.querySelectorAll(".kovetkezo_ep")
-
 
     if (currentTime >= targetTime) {
         // ne csináljon több gombot 1-nél
