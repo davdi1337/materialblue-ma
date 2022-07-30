@@ -46,7 +46,7 @@ function createButton() {
     }, 500)
 }
 
-currentTime_div.addEventListener("DOMSubtreeModified", function asdasd() {
+currentTime_div.addEventListener("DOMSubtreeModified", function() {
     var currentTime_mins = parseInt(currentTime_div.innerText.slice(0, 2) * 60)
     var currentTime_sec = parseInt(currentTime_div.innerText.slice(-2))
     var currentTime = currentTime_mins + currentTime_sec
