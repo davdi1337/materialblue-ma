@@ -24,6 +24,7 @@ element.style.minWidth = "250px"
 element.style.display = "block"
 element.style.transition = "opacity 1s"
 element.style.opacity = 0
+element.style.boxShadow = "0 0 10px 0 rgb(0 0 0 / 20%), 0 12px 24px -4px rgb(0 0 0 / 12%)"
 
 var timer = setInterval(function() {
     if (countdown <= 0) {
