@@ -5,7 +5,7 @@ var video_player = document.querySelector("#MagyarAnime > div > div.plyr__video-
 var button = document.querySelector("#MagyarAnime > div > button");
 var nextEp = document.querySelector("body > div:nth-child(2) > section > div > div > div.col-lg-12 > div.anime__video__player > center > div:nth-child(1) > div.gomb_kovetkezo > a");
 var epTime = parseInt(x.slice(0, 2) * 60) + parseInt(x.slice(-2));
-var targetTime = epTime * 0.94 // 94% a rész teljes hosszából
+var targetTime = epTime * 0.935 // 93,5% a rész teljes hosszából
 var countdown = 25 // visszaszámláló ideje
 
 const element = document.createElement("a")
