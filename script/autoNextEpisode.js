@@ -5,21 +5,22 @@ var video_player = document.querySelector("#MagyarAnime > div > div.plyr__video-
 var button = document.querySelector("#MagyarAnime > div > button");
 var nextEp = document.querySelector("body > div:nth-child(2) > section > div > div > div.col-lg-12 > div.anime__video__player > center > div:nth-child(1) > div.gomb_kovetkezo > a");
 var epTime = parseInt(x.slice(0, 2) * 60) + parseInt(x.slice(-2));
-// var targetTime = epTime - 100 // teljes hossz - 100s
-var targetTime = epTime * 0.93 // 93% a rész teljes hosszából
+var targetTime = epTime * 0.94 // 94% a rész teljes hosszából
 var countdown = 25 // visszaszámláló ideje
 
 const element = document.createElement("a")
 element.innerHTML = `Következő rész (${countdown})`
-element.href = nextEp.href
+if (nextEp != null) {
+    element.href = nextEp.href // ha nincs következő rész ne csináljon gombot
+}
 element.classList.add("kovetkezo_ep", "gomb_kovetkezo")
 element.style.color = "white!important"
 element.style.zIndex = 10;
 element.style.right = "5%"
 element.style.bottom = "10%"
 element.style.position = "absolute"
-element.style.padding = "5px 15px"
-element.style.minWidth = "150px"
+element.style.padding = "10px 25px"
+element.style.minWidth = "250px"
 element.style.display = "block"
 element.style.transition = "opacity 1s"
 element.style.opacity = 0
@@ -27,7 +28,7 @@ element.style.opacity = 0
 var timer = setInterval(function() {
     if (countdown <= 0) {
         clearInterval(timer)
-        element.click()
+        window.location = nextEp.href
     } else {
         element.innerHTML = `Következő rész (${countdown})`
     }
