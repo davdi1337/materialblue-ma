@@ -12,7 +12,7 @@ var countdown = 25 // visszaszámláló ideje
 const element = document.createElement("a")
 element.innerHTML = `Következő rész (${countdown})`
 element.href = nextEp.href
-element.classList.add("kovetkezo_ep", "gomb_kovetkezo", "nextep-anim")
+element.classList.add("kovetkezo_ep", "gomb_kovetkezo")
 element.style.color = "white!important"
 element.style.zIndex = 10;
 element.style.right = "5%"
