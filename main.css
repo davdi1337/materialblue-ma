@@ -1593,7 +1593,7 @@ body > div > section > div > section > div > div > div.row > div {
 @media only screen and (max-width: 770px) {
 	body > div > section.product.spad > div > div > div > div > div:nth-child(9),
 	body > div > section.product.spad > div > div > div > div > div:nth-child(13) {
-		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))!important;
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 	}
 }
 .form-select {
