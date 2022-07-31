@@ -63,9 +63,8 @@ currentTime_div.addEventListener("DOMSubtreeModified", function () {
     }
   } else if (currentTime <= targetTime) {
     countdown = 25; // visszaszámláló alaphelyzet
-    if (kovetkezo_ep_buttons[0] !== null) {
-      kovetkezo_ep_buttons[0].style.opacity = 0;
-      video_player.removeChild(kovetkezo_ep_buttons[0]);
+    if (element.parentNode !== null) {
+      element.parentNode.removeChild(element);
     } else {
       return;
     }
