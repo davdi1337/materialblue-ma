@@ -44,7 +44,7 @@ function AutoNextEp() {
   nextEp_button.style.position = "absolute";
   nextEp_button.style.right = "5%";
   nextEp_button.style.bottom = "10%";
-  nextEp_button.style.zIndex = 10;
+  nextEp_button.style.zIndex = 2;
   nextEp_button.href = nextEpisode?.href;
   nextEp_button.style.padding = "10px 25px";
   nextEp_button.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
