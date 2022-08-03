@@ -37,14 +37,21 @@ function AutoNextEp() {
 
   const nextEp_button = document.createElement("a");
   nextEp_button.classList.add("gomb_kovetkezo", "nextep_button");
-  nextEp_button.innerHTML = `Következő rész (${countdown})`;
+  // nextEp_button.innerHTML = `Következő rész (${countdown})`; // RÉGI, ANIMÁCIÓ NÉLKÜL
+  nextEp_button.innerHTML = `Következő rész (${countdown})<div class="loading-anim" style="position: absolute; left: 0; top: 0; width: calc(100% - ${
+    countdown * 4
+  }%); height: 100%; z-index: -1; background-color: rgba(255,255,255,0.8);"></div>`;
   nextEp_button.style.position = "absolute";
   nextEp_button.style.right = "5%";
   nextEp_button.style.bottom = "10%";
   nextEp_button.style.zIndex = 10;
   nextEp_button.href = nextEpisode?.href;
   nextEp_button.style.padding = "10px 25px";
-  nextEp_button.style.color = "white";
+  nextEp_button.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+  nextEp_button.style.color = "#000";
+  nextEp_button.style.backdropFilter = "blur(5px)";
+  nextEp_button.style.borderRadius = "6px";
+  nextEp_button.style.overflow = "hidden";
   nextEp_button.style.minWidth = "250px";
   nextEp_button.style.boxShadow =
     "0 0 10px 0 rgb(0 0 0 / 20%), 0 12px 24px -4px rgb(0 0 0 / 12%)";
@@ -77,11 +84,14 @@ function AutoNextEp() {
   if (nextEpisode !== null) {
     var timer = setInterval(function () {
       if (currentTime_converted > epTarget) {
-        if (countdown <= 0) {
+        if (countdown <= -1) {
           clearInterval(timer);
           window.location = nextEpisode.href;
         } else {
-          nextEp_button.innerHTML = `Következő rész (${countdown})`;
+          // nextEp_button.innerHTML = `Következő rész (${countdown})`; // RÉGI, ANIMÁCIÓ NÉLKÜL
+          nextEp_button.innerHTML = `Következő rész (${countdown})<div class="loading-anim" style="position: absolute; left: 0; top: 0; width: calc(100% - ${
+            countdown * 4
+          }%); height: 100%; z-index: -1; background-color: rgba(255,255,255,0.8);"></div>`;
         }
         if (
           document
