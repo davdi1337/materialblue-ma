@@ -59,7 +59,7 @@ function AutoNextEp() {
   async function createButton() {
     if (player === null) {
       return; // ne csináljon gombot
-    } else {
+    } else if (nextEpisode !== null) {
       player.appendChild(nextEp_button);
     }
   }
