@@ -1,8 +1,8 @@
 if (window.location.pathname.includes("epizod")) {
-  // 500ms timeout hogy biztosan lekérje a jó időt
+  // 1500ms timeout hogy biztosan lekérje a jó időt
   setTimeout(() => {
     AutoNextEp();
-  }, 500);
+  }, 1500);
 }
 
 function AutoNextEp() {
