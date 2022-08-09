@@ -2,7 +2,7 @@
 
 /* variables */
 :root {
-	--ver: "1.189";
+	--ver: "1.19";
 	--bg: rgb(22, 28, 36);
 	--cardbg: rgb(33, 43, 54);
 	--navbarbg: rgba(22, 28, 36, 0.8);
@@ -1647,6 +1647,14 @@ body > div > section.product.spad > div > div > div > div > div:nth-child(10){
 	grid-template-columns: repeat(auto-fill, 200px);
 	justify-content: space-between;
 	grid-gap: 15px;
+}
+/* ver 1.19 */
+.logo_link {
+	height: inherit;
+}
+.logo_first,
+.logo_second {
+	display: none;
 }
 
 /* footer */
