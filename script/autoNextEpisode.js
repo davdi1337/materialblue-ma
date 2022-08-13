@@ -79,10 +79,7 @@ function AutoNextEp() {
     if (currentTime_converted > epTarget) {
       createButton();
     } else if (currentTime_converted < epTarget) {
-      $(".nextep_button").fadeOut() // jQuery animation out
-      setTimeout(() => {
-        removeButton(); // timeout removebutton
-      }, 500)
+        removeButton();
     }
   });
   if (nextEpisode !== null) {
