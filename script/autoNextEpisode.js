@@ -61,6 +61,7 @@ function AutoNextEp() {
       return; // ne csináljon gombot
     } else if (nextEpisode !== null) {
       player.appendChild(nextEp_button);
+      $(".nextep_button").fadeIn() // jQuery animation in
     }
   }
   async function removeButton() {
@@ -78,7 +79,10 @@ function AutoNextEp() {
     if (currentTime_converted > epTarget) {
       createButton();
     } else if (currentTime_converted < epTarget) {
-      removeButton();
+      $(".nextep_button").fadeOut() // jQuery animation out
+      setTimeout(() => {
+        removeButton(); // timeout removebutton
+      }, 500)
     }
   });
   if (nextEpisode !== null) {
