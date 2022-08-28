@@ -1685,7 +1685,7 @@ body > div > section.product.spad > div > div > div > div > div:nth-child(10){
 	--bs-alert-color: #ffd0d0;
 	--bs-alert-border-color: #B72136;
 }
-gomb_elozo,
+.gomb_elozo,
 .gomb_kovetkezo {
 	height: auto!important;
 	width: auto!important;
