@@ -1680,6 +1680,11 @@ body > div > section.product.spad > div > div > div > div > div:nth-child(10){
 #uptotop a > svg {
 	display: none;
 }
+.alert-danger {
+	--bs-alert-bg: rgba(183, 33, 54, .5);
+	--bs-alert-color: #ffd0d0;
+	--bs-alert-border-color: #B72136;
+}
 
 /* footer */
 .footer {
