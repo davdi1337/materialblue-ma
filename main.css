@@ -1726,7 +1726,7 @@ body > div:nth-child(2) > section > div > div > div.col-lg-12 > div.anime__video
 }
 
 .footer__nav:after {
-	content: "Material " var(--ver) " - by: davdi1337";
+	content: "Material " var(--ver)" - by: davdi1337";
 	display: flex;
 	justify-content: center;
 }
