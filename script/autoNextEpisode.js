@@ -18,6 +18,16 @@ function AutoNextEp() {
   const nextEpisode = document.querySelector(
     "body > div:nth-child(2) > section > div > div > div.col-lg-12 > div.anime__video__player > center > div:nth-child(1) > div.gomb_kovetkezo > a"
   );
+    const buttons = document.querySelector(
+    "#MagyarAnime > div > div.plyr__controls > button:nth-child(11)"
+  );
+  const timebutton = document.createElement("button");
+  const plyr_controls = document.querySelector(
+    "#MagyarAnime > div > div.plyr__controls"
+  );
+  timebutton.classList.add("plyr__controls__item", "plyr__control");
+  timebutton.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Time</title><path d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48zm96 240h-96a16 16 0 01-16-16V128a16 16 0 0132 0v128h80a16 16 0 010 32z"/></svg>
+`;
 
   var epDuration_converted;
   var currentTime_converted;
@@ -30,7 +40,18 @@ function AutoNextEp() {
     epDuration_converted =
       parseInt(epDuration_el.innerHTML.slice(0, 2) * 60) +
       parseInt(epDuration_el.innerHTML.slice(-2));
+      plyr_controls.insertBefore(timebutton, buttons);
   }
+  let state = true;
+  timebutton.addEventListener("click", function (event) {
+    state = !state;
+    if (!state) {
+      event.target.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Time</title><path d="M256 64C150 64 64 150 64 256s86 192 192 192 192-86 192-192S362 64 256 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 128v144h96"/></svg>    
+    `;
+    } else {
+      event.target.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Time</title><path d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48zm96 240h-96a16 16 0 01-16-16V128a16 16 0 0132 0v128h80a16 16 0 010 32z"/></svg>`;
+    }
+  });
 
   const epTarget = epDuration_converted * 0.935; // honnan kezdődjön
   var countdown = 25; // számláló
@@ -97,7 +118,7 @@ function AutoNextEp() {
         if (
           document
             .querySelector("#MagyarAnime > div")
-            .classList.contains("plyr--paused")
+            .classList.contains("plyr--paused") || !state
         ) {
           countdown; // ha megáll a lejátszás megáll a számláló
         } else {
