@@ -1712,6 +1712,19 @@ body > div:nth-child(2) > section > div > div > div.col-lg-12 > div.anime__video
 	height: 100%;
 	object-fit: cover;
 }
+.view2 > img {
+	display: none;
+}
+.view2::before {
+	content: "1080P";
+	background-color: var(--accent);
+	padding: 5px;
+	border-radius: var(--borderrad_md);
+	box-shadow: 0 0 2px 0 rgb(0 0 0 / 40%), 0 2px 24px -4px rgb(0 0 0 / 52%);
+	font-size: 14px;
+	font-weight: 500;
+	color: var(--white);
+}
 
 /* footer */
 .footer {
