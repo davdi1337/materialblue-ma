@@ -1725,6 +1725,9 @@ body > div:nth-child(2) > section > div > div > div.col-lg-12 > div.anime__video
 	font-weight: 500;
 	color: var(--white);
 }
+a[style*="background-color: red"] {
+	background-color: transparent!important;
+}
 
 /* footer */
 .footer {
