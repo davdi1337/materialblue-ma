@@ -2,7 +2,7 @@
 
 /* variables */
 :root {
-	--ver: "1.192";
+	--ver: "1.193";
 	--bg: rgb(22, 28, 36);
 	--cardbg: rgb(33, 43, 54);
 	--navbarbg: rgba(22, 28, 36, 0.8);
@@ -1727,6 +1727,48 @@ body > div:nth-child(2) > section > div > div > div.col-lg-12 > div.anime__video
 }
 a[style*="background-color: red"] {
 	background-color: transparent!important;
+}
+/* ver 1.193 */
+.header__menu ul li.active a {
+	color: var(--red)!important;
+	background: none;
+}
+.form-control {
+	background-color: var(--cardbg);
+	border: none;
+}
+input::placeholder {
+	color: var(--gray)!important;
+}
+input {
+	color: var(--gray)!important
+}
+.form-control:focus {
+	background-color: var(--cardbg);
+}
+button.btn {
+	background-color: var(--accent);
+	border: none;
+}
+button.btn:hover {
+	background-color: var(--accent_hover);
+}
+button.btn:focus, button.btn:active {
+	background-color: var(--accent_dark);
+}
+span[style*="rgb(71, 18, 128)"] {
+	background-color: var(--accent)!important;
+	box-shadow: var(--button-shadow);
+}
+span[style*="#471280"], span[style*="rgb(71, 18, 128)"] {
+	padding: 10px!important;
+	border-radius: var(--borderrad_md)!important;
+} 
+.form-control-color {
+	display: none;
+}
+html {
+	color-scheme: dark;
 }
 
 /* footer */
