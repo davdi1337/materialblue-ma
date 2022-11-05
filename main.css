@@ -1740,7 +1740,7 @@ a[style*="background-color: red"] {
 input::placeholder {
 	color: var(--gray)!important;
 }
-input {
+.form-control {
 	color: var(--gray)!important
 }
 .form-control:focus {
