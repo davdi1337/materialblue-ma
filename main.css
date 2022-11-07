@@ -5,6 +5,7 @@
 	--ver: "1.193";
 	--bg: rgb(22, 28, 36);
 	--cardbg: rgb(33, 43, 54);
+	--cardbg_alpha: rgba(33, 43, 54, 65%);
 	--navbarbg: rgba(22, 28, 36, 0.8);
 	--bg_alpha: rgba(145, 158, 171, 0.04);
 	--accent: rgb(32, 101, 209);
@@ -243,7 +244,11 @@ span[style*="color: red"] {
 }
 
 .hero__text .label {
+	/*
 	background-color: var(--cardbg);
+	*/
+	background-color: var(--cardbg_alpha);
+	backdrop-filter: blur(10px);
 	color: var(--white);
 	border-radius: var(--borderrad_md);
 	box-shadow: var(--shadow);
@@ -296,7 +301,11 @@ span[style*="color: red"] {
 .product__item__pic .view,
 .anime__details__pic .comment,
 .anime__details__pic .view {
+	/*
 	background-color: var(--cardbg);
+	*/
+	background-color: var(--cardbg_alpha);
+	backdrop-filter: blur(10px);
 	box-shadow: var(--shadow_card);
 	border-radius: var(--borderrad_md);
 	z-index: 1;
@@ -1741,7 +1750,7 @@ input::placeholder {
 	color: var(--gray)!important;
 }
 .form-control {
-	color: var(--gray)!important
+	color: var(--gray)!important;
 }
 .form-control:focus {
 	background-color: var(--cardbg);
