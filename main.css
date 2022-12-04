@@ -52,6 +52,7 @@ h4,
 h5,
 a,
 td,
+p,
 code {
 	font-family: var(--font) !important;
 }
