@@ -2,7 +2,7 @@ if (window.location.pathname.includes("epizod")) {
   NextEpisode();
 }
 function NextEpisode() {
-  var multiply = 0.935;
+  var multiplier = 0.935;
   const nextep_href = document.querySelector("div.gomb_kovetkezo > a");
   var nextep_button;
   var animtime = 15; // in sec
@@ -56,7 +56,7 @@ function NextEpisode() {
     }
     var currentTime = Math.floor(player.currentTime);
     var duration = Math.floor(player.duration);
-    if (currentTime >= Math.floor(duration * multiply)) {
+    if (currentTime >= Math.floor(duration * multiplier)) {
       createButton();
       if (player.paused) {
         nextep_button.style.setProperty("--state", "paused");
@@ -64,7 +64,7 @@ function NextEpisode() {
         nextep_button.style.setProperty("--state", "running");
       }
     }
-    if (currentTime < Math.floor(duration * multiply)) {
+    if (currentTime < Math.floor(duration * multiplier)) {
       removeButton();
     }
   }
