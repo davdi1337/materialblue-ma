@@ -1783,6 +1783,7 @@ span[style*="rgb(71, 18, 128)"] {
 html {
 	color-scheme: dark;
 }
+/* ver 1.1935 */
 .buttom_profil {
 	width: unset;
 	background-color: rgba(145, 158, 171, 0.06);
@@ -1800,6 +1801,30 @@ html {
 	box-shadow: none;
 	border-bottom: 1px solid hsl(214deg 24% 15%);
 	backdrop-filter: blur(10px);
+}
+body > div > header > div > div.row > div:nth-child(3) {
+	padding: 0;
+}
+.header__right {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+.header__right a {
+	margin: 0;
+}
+@media (min-width: 992px) {
+	.logo_link {
+		width: unset;
+	}
+}
+@media only screen and (max-width: 991px) {
+	.header {
+		height: 155px;
+	}
+	.slicknav_btn {
+		margin-top: 1.5rem;
+	}
 }
 
 /* footer */
