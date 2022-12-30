@@ -1637,8 +1637,8 @@ span[style*="#eb4034"] {
 	background-color: var(--accent)!important;
 }
 body > div > section.product.spad > div > div > div > div > div:nth-child(13) {
-    grid-template-columns: repeat(auto-fill, 200px);
-    grid-gap: 25px 15px;
+	grid-template-columns: repeat(auto-fill, 200px);
+	grid-gap: 25px 15px;
 }
 #clockdiv > div {
 	background-color: var(--cardbg);
@@ -1653,7 +1653,7 @@ body > div > section.product.spad > div > div > div > div > div:nth-child(6) {
 	grid-gap: 15px;
 	justify-content: space-between;
 }
-body > div > section.product.spad > div > div > div > div > div:nth-child(10){
+body > div > section.product.spad > div > div > div > div > div:nth-child(10) {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, 200px);
 	justify-content: space-between;
@@ -1764,17 +1764,19 @@ button.btn {
 button.btn:hover {
 	background-color: var(--accent_hover);
 }
-button.btn:focus, button.btn:active {
+button.btn:focus,
+button.btn:active {
 	background-color: var(--accent_dark);
 }
 span[style*="rgb(71, 18, 128)"] {
 	background-color: var(--accent)!important;
 	box-shadow: var(--button-shadow);
 }
-span[style*="#471280"], span[style*="rgb(71, 18, 128)"] {
+span[style*="#471280"],
+span[style*="rgb(71, 18, 128)"] {
 	padding: 10px!important;
 	border-radius: var(--borderrad_md)!important;
-} 
+}
 .form-control-color {
 	display: none;
 }
@@ -1782,12 +1784,22 @@ html {
 	color-scheme: dark;
 }
 .buttom_profil {
-	background-color: var(--accent);
+	width: unset;
+	background-color: rgba(145, 158, 171, 0.06);
 	border-radius: var(--borderrad_md);
-	transition: background-color var(--transition_button);
+	border: 1px solid hsl(214deg 24% 17%);
+	padding: 0.25rem 0.5rem;
+	transition: var(--transition_button);
+	font-weight: 600;
 }
 .buttom_profil:hover {
-	background-color: var(--accent_hover);
+	background-color: rgba(145, 158, 171, 0.08);
+	border-color: hsl(214deg 24% 20%);
+}
+.header {
+	box-shadow: none;
+	border-bottom: 1px solid hsl(214deg 24% 15%);
+	backdrop-filter: blur(10px);
 }
 
 /* footer */
@@ -1796,6 +1808,7 @@ html {
 	min-height: 200px;
 	height: inherit!important;
 	padding: 0;
+	border-top: 1px solid hsl(214deg 24% 15%);
 }
 
 .footer p {
