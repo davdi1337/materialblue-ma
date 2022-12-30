@@ -2,7 +2,7 @@
 
 /* variables */
 :root {
-	--ver: "1.193";
+	--ver: "1.1935";
 	--bg: rgb(22, 28, 36);
 	--cardbg: rgb(33, 43, 54);
 	--cardbg_alpha: rgba(33, 43, 54, 65%);
@@ -1780,6 +1780,14 @@ span[style*="#471280"], span[style*="rgb(71, 18, 128)"] {
 }
 html {
 	color-scheme: dark;
+}
+.buttom_profil {
+	background-color: var(--accent);
+	border-radius: var(--borderrad_md);
+	transition: background-color var(--transition_button);
+}
+.buttom_profil:hover {
+	background-color: var(--accent_hover);
 }
 
 /* footer */
