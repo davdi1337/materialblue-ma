@@ -55,6 +55,7 @@ td,
 p,
 code {
 	font-family: var(--font) !important;
+	color: inherit;
 }
 
 html,
@@ -1784,7 +1785,7 @@ html {
 	color-scheme: dark;
 }
 /* ver 1.1935 */
-.buttom_profil {
+.header > .container > .row > div:nth-child(3) > div > a:nth-child(2) > div {
 	width: unset;
 	background-color: rgba(145, 158, 171, 0.06);
 	border-radius: var(--borderrad_md);
@@ -1793,7 +1794,7 @@ html {
 	transition: var(--transition_button);
 	font-weight: 600;
 }
-.buttom_profil:hover {
+.header > .container > .row > div:nth-child(3) > div > a:nth-child(2) > div:hover {
 	background-color: rgba(145, 158, 171, 0.08);
 	border-color: hsl(214deg 24% 20%);
 }
