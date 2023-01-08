@@ -1828,6 +1828,9 @@ body > div > header > div > div.row > div:nth-child(3) {
 		margin-top: 1.5rem;
 	}
 }
+body > div > section.product.spad > div > div > div > div > div:nth-child(6) {
+	display: unset;
+}
 
 /* footer */
 .footer {
