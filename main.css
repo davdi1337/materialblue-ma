@@ -407,6 +407,7 @@ div[style*="#c90076"]:hover {
 .product__sidebar__comment__item__pic img {
 	height: 120px;
 	width: 90px;
+	object-fit: cover;
 }
 
 .product__sidebar__comment__item__pic:hover {
