@@ -2,7 +2,7 @@
 
 /* variables */
 :root {
-	--ver: "1.1935";
+	--ver: "1.1936";
 	--bg: rgb(22, 28, 36);
 	--cardbg: rgb(33, 43, 54);
 	--cardbg_alpha: rgba(33, 43, 54, 65%);
@@ -1830,6 +1830,20 @@ body > div > header > div > div.row > div:nth-child(3) {
 }
 body > div > section.product.spad > div > div > div > div > div:nth-child(6) {
 	display: unset;
+}
+/* ver 1.1936 */
+tr:has(td>img[alt*="profilkep"]) {
+	background-color: transparent;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: min-content;
+	left: 50%;
+	margin-top: -150px;
+}
+tr:has(td>img[alt*="profilkep"]) > td:nth-child(2) {
+	display: none;
 }
 
 /* footer */
