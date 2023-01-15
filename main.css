@@ -1845,6 +1845,10 @@ tr:has(td>img[alt*="profilkep"]) {
 tr:has(td>img[alt*="profilkep"]) > td:nth-child(2) {
 	display: none;
 }
+tr:has(td>img[alt*="profilkep"]) > td:last-child > code {
+	font-size: 1.5rem;
+	color: var(--white);
+}
 
 /* footer */
 .footer {
