@@ -202,7 +202,7 @@ span[style*="color: red"] {
 
 .hero__items {
 	border-radius: var(--borderrad_lg);
-	box-shadow: var(--shadow);
+/* 	box-shadow: var(--shadow); */
 	height: 450px !important;
 	padding: 50px;
 	display: flex;
