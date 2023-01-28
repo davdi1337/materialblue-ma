@@ -251,6 +251,7 @@ span[style*="color: red"] {
 	*/
 	background-color: var(--cardbg_alpha);
 	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
 	color: var(--white);
 	border-radius: var(--borderrad_md);
 	box-shadow: var(--shadow);
@@ -308,6 +309,7 @@ span[style*="color: red"] {
 	*/
 	background-color: var(--cardbg_alpha);
 	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
 	box-shadow: var(--shadow_card);
 	border-radius: var(--borderrad_md);
 	z-index: 1;
