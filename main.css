@@ -2,7 +2,7 @@
 
 /* variables */
 :root {
-	--ver: "1.1936";
+	--ver: "1.194";
 	--bg: rgb(22, 28, 36);
 	--cardbg: rgb(33, 43, 54);
 	--cardbg_alpha: rgba(33, 43, 54, 65%);
@@ -1852,6 +1852,23 @@ tr:has(td>img[alt*="profilkep"]) > td:nth-child(2) {
 tr:has(td>img[alt*="profilkep"]) > td:last-child > code {
 	font-size: 1.5rem;
 	color: var(--white);
+}
+/* ver 1.194 */
+.l-navbar {
+	--nav-width: 70px;
+	background-color: var(--cardbg);
+}
+#navbar > nav > div > div.nav__brand > a {
+	color: var(--white)!important;
+}
+#navbar > nav > div > div.nav__brand > a > span {
+	color: var(--accent)!important;
+}
+.nav__list > a {
+	color: inherit!important;
+}
+.nav {
+	flex-wrap: nowrap;
 }
 
 /* footer */
