@@ -1879,6 +1879,12 @@ tr:has(td>img[alt*="profilkep"]) > td:last-child > code {
 .owl-item.active {
 	background-color: unset;
 }
+.l-navbar:hover .nav__link.collapsenew.active > .collapse__menu {
+	display: inherit;
+}
+.l-navbar:not(hover) .nav__link.collapsenew.active > .collapse__menu {
+	display: none;
+}
 
 /* footer */
 .footer {
