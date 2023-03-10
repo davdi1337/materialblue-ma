@@ -1876,6 +1876,9 @@ tr:has(td>img[alt*="profilkep"]) > td:last-child > code {
 .nav__link:hover {
 	color: inherit;
 }
+.owl-item.active {
+	background-color: unset;
+}
 
 /* footer */
 .footer {
