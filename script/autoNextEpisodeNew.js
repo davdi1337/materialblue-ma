@@ -1,5 +1,8 @@
-if (window.location.pathname.includes("epizod")) {
+if (window.location.pathname.includes("resz")) {
   NextEpisode();
+  logStart()
+} else {
+  logError()
 }
 function NextEpisode() {
   var multiplier = 0.935;
@@ -52,6 +55,7 @@ function NextEpisode() {
   function checkTime() {
     if (!nextep_href) {
       clearInterval(timer);
+      console.log("%cNincs elérhető következő rész.", "font-size: 16px; font-weight: bold")
       return;
     }
     var currentTime = Math.floor(player.currentTime);
@@ -94,4 +98,12 @@ function NextEpisode() {
   if (player.playing) {
     timer;
   }
+}
+function logStart() {
+  console.log("%cAutoNextEpisode v1.0 - by: davdi1337", "font-size: 18px; font-weight: bold")
+  console.log("%cA script sikeresen elindult!", "font-size: 18px; font-weight: bold; color: rgb(32 209 95)")
+}
+function logError() {
+  console.log("%cAutoNextEpisode v1.0 - by: davdi1337", "font-size: 18px; font-weight: bold")
+  console.log("%cA script nem indult el, mivel nem vagy egyetlen animéhez tartozó rész oldalán sem.", "font-size: 18px; font-weight: bold; color: rgb(209 32 32)")
 }
