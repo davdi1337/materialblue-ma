@@ -1855,7 +1855,6 @@ tr:has(td>img[alt*="profilkep"]) > td:last-child > code {
 }
 /* ver 1.194 */
 .l-navbar {
-	--nav-width: 70px;
 	background-color: var(--cardbg);
 }
 #navbar > nav > div > div.nav__brand > a {
@@ -1867,9 +1866,6 @@ tr:has(td>img[alt*="profilkep"]) > td:last-child > code {
 .nav__list > a {
 	color: inherit!important;
 }
-.nav {
-	flex-wrap: nowrap;
-}
 .nav__link {
 	--first-color: var(--accent);
 }
@@ -1878,13 +1874,7 @@ tr:has(td>img[alt*="profilkep"]) > td:last-child > code {
 }
 .owl-item.active {
 	background-color: unset;
-}
-.l-navbar:hover .nav__link.collapsenew.active > .collapse__menu.showCollapse {
-	display: inherit;
-}
-.l-navbar:not(hover) .nav__link.collapsenew.active > .collapse__menu.showCollapse {
-	display: none;
-}
+}	display: none;
 
 /* footer */
 .footer {
