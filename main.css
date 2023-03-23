@@ -1855,7 +1855,9 @@ tr:has(td>img[alt*="profilkep"]) > td:last-child > code {
 }
 /* ver 1.194 */
 .l-navbar {
-	background-color: var(--cardbg);
+	background-color: var(--bg_alpha);
+	border-right: 1px solid hsl(214deg 24% 15%);
+    	backdrop-filter: blur(10px);
 }
 #navbar > nav > div > div.nav__brand > a {
 	color: var(--white)!important;
