@@ -1899,6 +1899,18 @@ tr:has(td>img[alt*="profilkep"]) > td:last-child > code {
 	max-width: unset!important;
 	height: auto!important;
 }
+.btn__all > .primary-btn {
+	color: var(--gray);
+}
+.btn__all > .primary-btn:hover {
+	color: var(--white);
+}
+.hd {
+	background-color: var(--accent)!important;
+}
+.product__item__pic {
+	overflow: hidden;
+}
 
 /* footer */
 .footer {
