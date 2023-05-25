@@ -1911,6 +1911,9 @@ tr:has(td>img[alt*="profilkep"]) > td:last-child > code {
 .product__item__pic {
 	overflow: hidden;
 }
+.owl-item.active ~ .hero__text, .hero__text>a, .hero__text>h2 {
+	opacity: 1;
+}
 
 /* footer */
 .footer {
